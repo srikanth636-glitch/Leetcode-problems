@@ -8,7 +8,7 @@ class Solution {
             int currentArea = Math.min(height[left], height[right]) * (right - left);
             mx = Math.max(mx, currentArea);
 
-            if (height[left] < height[right]) {
+            if (height[left] <= height[right]) {
                 left++;
             } else {
                 right--;
